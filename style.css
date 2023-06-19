@@ -7,6 +7,7 @@
     --accent-color: rgb(202, 141, 160);
     --accent-color-light: rgb(254, 207, 221);
     --accent-color-dark: rgb(148, 74, 97);
+    --background-color: #fff0f0;
 
     --font-family: Arial, sans-serif;
     --font-size-small: 14px;
@@ -19,6 +20,7 @@
   
   body {
     font-family: 'Playfair Display', serif;
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
     color: var(--text-color);
