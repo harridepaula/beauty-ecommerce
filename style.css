@@ -1,5 +1,4 @@
 /* Global styles */
-
 :root {
     --primary-color: #333;
     --secondary-color: #fff;
@@ -77,27 +76,22 @@
     font-style: italic;
   }
   
-  /* Layout */
-
-  .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-  
+  /* General */
   header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     padding: 20px;
     text-align: center;
+    margin-bottom: 6em;
   }
-  
+
   .container {
     max-width: 1000px;
     margin: 20px auto;
     padding: 0 20px;
   }
   
+  /* Product list */
   .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -107,12 +101,17 @@
   .product {
     border: 1px solid var(--text-color);
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .product img {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
+    max-height: 15em;
+    object-fit: cover;
   }
   
   .product h2 {
@@ -136,4 +135,61 @@
     cursor: pointer;
     font-size: 1.2rem;
     font-weight: var(--font-weight-bold);
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width as needed */
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    z-index: 999; /* Ensure it appears above other elements */
+  }
+  
+  .sidebar h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  /* Media queries */
+
+  @media (min-width: 768px) {
+    .product-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .product-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .product-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
