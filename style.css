@@ -1,0 +1,40 @@
+/* Global styles */
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #fff;
+    --text-color: #555;
+    --accent-color: rgb(202, 141, 160);
+    --accent-color-light: rgb(254, 207, 221);
+    --accent-color-dark: rgb(148, 74, 97);
+
+    --font-family: Arial, sans-serif;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 18px;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+  }
+  
+  /* Utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-white {
+    color: var(--secondary-color);
+  }
+  
+  .bg-dark {
+    background-color: var(--primary-color);
+  }
+  
+  
