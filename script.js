@@ -5,16 +5,52 @@
 const products = [
     {
       name: "Product 1",
-      image: "product1.jpg",
+      image: "img/product1.jpg",
       price: "$19.99",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
       name: "Product 2",
-      image: "product2.jpg",
+      image: "img/product2.jpg",
       price: "$24.99",
       description: "Praesent eu aliquam quam, eget pharetra arcu."
     },
+    {
+        name: "Product 3",
+        image: "img/product3.jpg",
+        price: "$19.99",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        name: "Product 4",
+        image: "img/product4.jpg",
+        price: "$24.99",
+        description: "Praesent eu aliquam quam, eget pharetra arcu."
+      },
+      {
+        name: "Product 5",
+        image: "img/product5.jpg",
+        price: "$19.99",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        name: "Product 6",
+        image: "img/product6.jpg",
+        price: "$24.99",
+        description: "Praesent eu aliquam quam, eget pharetra arcu."
+      },
+      {
+        name: "Product 7",
+        image: "img/product7.jpg",
+        price: "$19.99",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      },
+      {
+        name: "Product 8",
+        image: "img/product8.jpg",
+        price: "$24.99",
+        description: "Praesent eu aliquam quam, eget pharetra arcu."
+      },
     // Add more product objects here
   ];
   
@@ -52,4 +88,4 @@ const products = [
     });
   }
   
-  displayProducts();
+  displayProducts();j

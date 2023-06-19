@@ -19,7 +19,7 @@
   }
   
   body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Outfit', sans-serif;
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
@@ -38,36 +38,94 @@
   .bg-dark {
     background-color: var(--primary-color);
   }
+
+  .mt-10 {
+    margin-top: 10px;
+  }
+  
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  
+  .ml-10 {
+    margin-left: 10px;
+  }
+  
+  .mr-10 {
+    margin-right: 10px;
+  }
+  
+  .py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .rounded {
+    border-radius: 5px;
+  }
+  
+  .text-bold {
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .text-italic {
+    font-style: italic;
+  }
   
   /* Layout */
 
   .container {
     max-width: 800px;
     margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
   }
   
   .product {
     border: 1px solid var(--text-color);
     padding: 20px;
-    margin-bottom: 20px;
   }
   
   .product img {
     width: 100%;
-    max-width: 200px;
     height: auto;
+    margin-bottom: 10px;
   }
   
   .product h2 {
     margin-top: 0;
-    font-size: var(--font-size-large);
+    font-size: 1.8rem;
     font-weight: var(--font-weight-bold);
+    margin-bottom: 10px;
   }
   
   .product p {
     margin-bottom: 10px;
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-regular);
+    font-size: 1.2rem;
+    line-height: 1.4;
   }
   
   .product button {
@@ -76,7 +134,6 @@
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: var(--font-size-medium);
+    font-size: 1.2rem;
     font-weight: var(--font-weight-bold);
   }
-  
